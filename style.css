@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+
+:root {
+    --bg-color-1: #191825;
+    --bg-color-2: #20232f;
+    --card-color: #323744;
+    --button-color: #03c9d8;
+    --font-color: #ebe8ea;
+    /* === FONT === */
+    --ff-1: 'Bebas Neue', sans-serif;
+    --ff-2: 'Roboto', sans-serif;
+    /* === END FONT === */
+    --transition: all 0.3s linear;
+}
+
+/* ==== GLOBAL VARIABLES ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-2);
+    color: var(--font-color);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+h4{
+    font-size: 1.3rem;
+}
+button{
+    background: var(--button-color);
+    padding: .5rem 1rem;
+    border-radius: 40px;
+    border: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+/* ==== END GLOBAL VARIABLES ==== */
+
+
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar h5 {
+    padding: 1rem;
+}
+/* NAVBAR */
+
+
+
+/* ==== HERO ==== */
+.hero {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 3rem;
+    border: 2px solid var(--bg-color-1);
+    background: var(--bg-color-1);
+}
+
+.hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100% ;
+    gap: 1rem;
+}
+.hero-center{
+    height: 100%;
+}
+.hero-img-center img{
+    border-radius: 50%;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+    margin-top: 2rem;
+}
+.hero-desc{
+    border-radius: 40px;
+    padding: .16rem 1rem;
+    background: linear-gradient(115deg, rgb(0, 0, 0) 5.8%, rgb(178, 14, 14) 112.6%);
+    color: var(--font-color);
+    font-family: var(--ff-2);
+}
+.hero-name{
+    font-family: var(--ff-1);
+    font-size: 4rem;
+    color: var(--font-color);
+}
+.button-center{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+.button-center button{
+    width: 8rem;
+}
+.button-center button:hover{
+    transform: scale(1.03);
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+.icon{
+    font-size: 2.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.08);
+}
+@media screen and (min-width:991px){
+    .hero-desc{
+        text-align: center;
+        width: 14rem;
+        height: 3rem;
+        padding-top: .7rem;
+    }
+    .hero-name{
+        font-size: 6rem;
+    }
+    .hero-p{
+        font-size: 1.2rem;
+    }
+    .button-center{
+        margin-top: 2rem;
+    }
+    .button-center button{
+        width: 15rem;
+        height: 5rem;
+        font-size: 1.3rem;
+    }
+    .icon{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width:768px){
+    .hero-img-center{
+        max-width: 450px;
+    }
+    .button-center button{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:617px) {
+    .hero-img-center{
+        width: 300px;
+        max-width: 300px;
+    }
+    .button-center button{
+        text-align: center;
+        width: 8rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:1220px) {
+    .hero-center{
+        flex-direction: row;
+        gap: 4rem;
+    }
+    .hero-img-center{
+        width: 25rem;
+        max-width: none
+    }
+    .hero-desc{
+        text-align: center;
+        width: 11rem;
+        height: 3rem;
+        padding-top: .9rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .hero-name{
+        font-size: 8rem;
+    }
+    .button-center{
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    .icon{
+        font-size: 4rem;
+    }
+}
+
+/* ==== END HERO ==== */
+
+/* ==== ABOUT ==== */
+.about{
+    background: var(--bg-color-2);
+}
+/* ==== END ABOUT ==== */
