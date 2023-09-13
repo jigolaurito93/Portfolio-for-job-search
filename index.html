@@ -10,12 +10,71 @@
     <!-- ===== End of Font Awesome ===== -->
 </head>
 <body>
-    <!-- NAV -->
+    <!-- Navbar -->
     <div class="navbar">
-        <h5>logo</h5>
-        <h5>LINK</h5>
+        <!-- nav-center -->
+        <div class="nav-center">
+            <!-- nav-header -->
+            <div class="nav-header">
+                <h1><a href="#home"><span>J</span>LAU</a></h1>
+                <button type="button" class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- end nav-header -->
+            <!-- nav-links -->
+            <ul class="nav-links" id="nav-links">
+                <!-- single link -->
+                <li>
+                    <a href="#home" class="nav-link scroll-link ff">home</a>
+                </li>
+                <!-- end single link -->
+                <!-- single link -->
+                <li>
+                    <a href="#about" class="nav-link scroll-link ff">about</a>
+                </li>
+                <!-- end single link -->
+                <!-- single link -->
+                <li>
+                    <a href="#projects" class="nav-link scroll-link ff">projects</a>
+                </li>
+                <!-- end single link -->
+                <!-- single link -->
+                <li>
+                    <a href="#contact" class="nav-link scroll-link ff">contact</a>
+                </li>
+                <!-- end single link -->
+            </ul>
+            <!-- end nav-links -->
+            <!-- nav icons -->
+            <ul class="nav-icons">
+                <!-- single icon -->
+                <li>
+                    <a href="#" target="_blank" class="nav-icon">
+                        <i class="fa-brands fa-github" id="GH" onclick="location.href='https://github.com/jigolaurito93/'"></i>
+                    </a>
+                </li>
+                <!-- end single icon -->
+                <!-- single icon -->
+                <li>
+                    <a href="#" target="_blank" class="nav-icon">
+                        <i class="fa-brands fa-linkedin" id="LI" onclick="location.href='https://www.linkedin.com/in/jose-laurito/'"></i>
+                    </a>
+                </li>
+                <!-- end single icon -->
+                <!-- single icon -->
+                <li>
+                    <a href="#" target="_blank" class="nav-icon">
+                        <i class="fa-brands fa-instagram" id="IG" onclick="location.href='https://www.instagram.com/jigolaurito/'"></i>
+                    </a>
+                </li>
+                <!-- end single icon -->
+            </ul>
+            <!-- end nav icons -->
+        </div>
+        <!-- end nav-center -->
     </div>
-    <!-- NAV -->
+    <!-- End Navbar -->
     <!-- ==== HERO ==== -->
     <section class="hero" id="home">
         <!-- === HERO CENTER === -->
@@ -34,23 +93,23 @@
                 <p class="hero-p">I'm a Full-time Chef, aspiring Software Engineer and a proud newbie Dad.</p>
                 
                 <div class="button-center">
-                    <button>Download CV</button>
-                    <button>Contact Info</button>
+                    <button onclick="window.open('/assets/resume.pdf')">Download CV</button>
+                    <button><a href="#contact" class="contact-btn">Contact Me</a></button>
                 </div>
     
                 <!-- === ICONS === -->
                 <div class="icons">
-                    <a href="" class="icon">
-                        <i class="fa-brands fa-facebook"></i>
+                    <a href="#" class="icon" target="_blank">
+                        <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/jigolaurito'"></i>
                     </a>
-                    <a href="" class="icon">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="#" class="icon" target="_blank">
+                        <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/jigolaurito/'"></i>
                     </a>
-                    <a href="" class="icon">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <a href="#" class="icon" target="_blank">
+                        <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/jose-laurito/'"></i>
                     </a>
-                    <a href="" class="icon">
-                        <i class="fa-brands fa-github"></i>
+                    <a href="#" class="icon" target="_blank">
+                        <i class="fa-brands fa-github" onclick="location.href='https://github.com/jigolaurito93/'"></i>
                     </a>
                 </div>
                 <!-- === END ICONS === -->
@@ -141,6 +200,150 @@
         <!-- === END ABOUT CENTER === -->
     </section>
     <!-- ==== END ABOUT ==== -->
+
+    <!-- ==== PROJECTS ==== -->
+    <section class="projects" id="projects">
+        <!-- ==== PROJECT CENTER ==== -->
+        <div class="project-center">
+            <h1 class="project-h1">projects</h1>
+
+            <!-- ==== PROJECT CARDS ==== -->
+            <div class="project-cards">
+
+                
+                <!-- ==== SINGLE CARD ==== -->
+                <div class="project-card">
+                    <img src="/images/use1.jpeg" alt="" class="project-img">
+                    <!-- === CONTENT TEXT === -->
+                    <div class="content-text">
+                        <h2>Simon Says Game</h2>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <!-- === END CONTENT TEXT === -->
+                </div>
+                <!-- ==== END SINGLE CARD ==== -->
+
+                <!-- ==== SINGLE CARD ==== -->
+                <div class="project-card">
+                    <img src="/images/use2.jpg" alt="" class="project-img">
+                    <!-- === CONTENT TEXT === -->
+                    <div class="content-text">
+                        <h2>BackPack Website</h2>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <!-- === END CONTENT TEXT === -->
+                </div>
+                <!-- ==== END SINGLE CARD ==== -->
+
+                <!-- ==== SINGLE CARD ==== -->
+                <div class="project-card">
+                    <img src="/images/3x4.jpg" alt="" class="project-img">
+                    <!-- === CONTENT TEXT === -->
+                    <div class="content-text">
+                        <h2>Tea Website</h2>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <!-- === END CONTENT TEXT === -->
+                </div>
+                <!-- ==== END SINGLE CARD ==== -->
+
+                <!-- ==== SINGLE CARD ==== -->
+                <div class="project-card">
+                    <img src="/images/3x4c.jpg" alt="" class="project-img">
+                    <!-- === CONTENT TEXT === -->
+                    <div class="content-text">
+                        <h2>Classic Snake Game</h2>
+                        <p>Python (Turtle Module)</p>
+                    </div>
+                    <!-- === END CONTENT TEXT === -->
+                </div>
+                <!-- ==== END SINGLE CARD ==== -->
+
+                <!-- ==== SINGLE CARD ==== -->
+                <div class="project-card">
+                    <img src="/images/3x4b.jpg" alt="" class="project-img">
+                    <!-- === CONTENT TEXT === -->
+                    <div class="content-text">
+                        <h2>Turtle Race Game</h2>
+                        <p>Python, Turtle Mod, EventListener</p>
+                    </div>
+                    <!-- === END CONTENT TEXT === -->
+                </div>
+                <!-- ==== END SINGLE CARD ==== -->
+
+                <!-- ==== SINGLE CARD ==== -->
+                <div class="project-card">
+                    <img src="/images/3x4a.jpg" alt="" class="project-img">
+                    <!-- === CONTENT TEXT === -->
+                    <div class="content-text">
+                        <h2>Coffee Machine Project</h2>
+                        <p>Python, OOP</p>
+                    </div>
+                    <!-- === END CONTENT TEXT === -->
+                </div>
+                <!-- ==== END SINGLE CARD ==== -->
+
+
+            </div>
+            <!-- ==== END PROJECT CARDS ==== -->
+
+            <!-- ==== BUTTON ==== -->
+            <div class="more-projects">
+                <button class="see-more btnz"><a href="https://github.com/jigolaurito93?tab=repositories" target="_blank" class="see-more">See More</a></button>
+            </div>
+            <!-- ==== END BUTTON ==== -->
+        </div>
+        <!-- ==== END PROJECT CENTER ==== -->
+    </section>
+    <!-- ==== END PROJECTS ==== -->
+
+
+    <!-- ==== CONTACT ME ==== -->
+    <section class="contact" id="contact">
+        <!-- ==== CONTACT CENTER ==== -->
+        <div class="contact-center">
+            <h1 class="contact-text">contact me!</h1>
+
+            <!-- ==== CONTACT FORM ==== -->
+            <form action="https://formspree.io/f/xgejzeeq" target="_blank" method="POST" class="form">
+                <div class="input-box">
+                    <input type="text" class="c-name input-text" placeholder="Full Name" name="Name" required>
+                    <input type="email" class="c-email input-text" placeholder="Email Address" name="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="c-phone input-text" placeholder="Mobile Number" name="Phone" required>
+                    <input type="text" class="c-subject input-text" placeholder="Email Subject" name="Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="c-message" name="Message" required></textarea>
+                <input type="submit" class="send-message" id="send-message" rows="30" value="Send Message">
+            </form>            
+            <!-- ==== END CONTACT FORM ==== -->
+        </div>
+        <!-- ==== END CONTACT CENTER ==== -->
+    </section>
+    <!-- ==== END CONTACT ME ==== -->
+
+    <!-- === FOOTER ==== -->
+    <div class="footer">
+        <div class="footer-center">
+            <ul class="footer-links">
+                <li class="footer-link">&copy;Jose Laurito |</li>
+                <li class="footer-link">
+                    <a href="https://github.com/jigolaurito93/" class="footer-icon">GitHub 
+                        <i class="fa-brands fa-github" id="GH" onclick="location.href='https://github.com/jigolaurito93/'"></i>|
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a href="https://www.linkedin.com/in/jose-laurito/" class="footer-icon">LinkedIn 
+                        <i class="fa-brands fa-linkedin" id="LI" onclick="location.href='https://www.linkedin.com/in/jose-laurito/'"></i>
+                    </a>
+                </li>
+            </ul>
+    </div>
+    <!-- === END FOOTER ==== -->
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
