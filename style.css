@@ -66,7 +66,7 @@ li {
 
 /* ==== HERO ==== */
 .hero {
-    height: 100vh;
+    height: 98vh;
     width: 100vw;
     padding: 0 3rem;
     border: 2px solid var(--bg-color-1);
@@ -82,8 +82,8 @@ li {
     width: 100% ;
     gap: 1rem;
 }
-.hero-center{
-    height: 100%;
+.hero-img-center{
+    width: 20rem;
 }
 .hero-img-center img{
     border-radius: 50%;
@@ -111,7 +111,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .button-center button{
     width: 8rem;
@@ -218,7 +218,7 @@ li {
 .about{
     background: var(--bg-color-2);
     padding: 4rem 3rem;
-    min-height: 100vh;
+    min-height: 93vh;
     width: 100vw;
 }
 .about-center{
@@ -344,15 +344,27 @@ li {
 }
 @media screen and (min-width:1650px){
     .about-center{
-        padding-left: 11rem;
-        gap: 9rem;
+        padding-left: 17rem;
+        gap: 1rem;
+    }
+    .options{
+        width: 400px;
+        justify-content: space-between;
     }
     .about-p1, .about-p2{
         font-size: 1.05rem;
         letter-spacing: .1rem;
         line-height: 1.5rem;
     }
+    .skill-board{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .about-text{
+        justify-content: center;
+        width: 655px;
+    }
+    
 }
-
-
 /* ==== END ABOUT ==== */
